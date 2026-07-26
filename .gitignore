@@ -1,0 +1,9 @@
+# Caches
+.sass-cache/
+**/.sass-cache/
+*.sass-cache
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
