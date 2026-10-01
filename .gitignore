@@ -7,3 +7,19 @@
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Ignored content
+Another_Exam/
+CKAV10.0pdf.zip
+CKA_Exam_Preparation_Notes.md
+SAA-C03V37.6pdf.zip
+ck-x-simulator/
+lightning-lab1/
+mock-exam1/
+mock-exam2/
+mock-exam3/
+play-with-docker/
+play-with-kubernetes.github.io/
+start.bat
+stop.bat
+.agents/
