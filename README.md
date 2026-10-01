@@ -23,18 +23,15 @@ For full details, prerequisites (like enabling Hyper-V and installing Vagrant), 
 
 ---
 
-## 🛠️ CK-x-simulator
+## 🛠️ CKA-PREP-2025-v2
 
-This repository also includes the setup for **CK-x-simulator**, which is great for exam simulation.
+This repository also includes a set of straightforward CKA practice labs, each in its own folder with setup scripts, questions, and solution notes.
 
-You can find the simulator files in the following directory:  
-👉 **[`./ck-x-simulator`](./ck-x-simulator)**
+You can find the practice questions in the following directory:  
+👉 **[`./CKA-PREP-2025-v2`](./CKA-PREP-2025-v2)**
 
-To run the simulator, navigate to that directory and bring up the environment using Docker Compose:
-```powershell
-cd ck-x-simulator
-docker-compose up -d
-```
+To use the practice labs, follow the detailed instructions here:
+👉 **[`CKA-PREP-2025-v2/README.md`](./CKA-PREP-2025-v2/README.md)**
 
 ---
 
