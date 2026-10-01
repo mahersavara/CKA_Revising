@@ -1,0 +1,8 @@
+.vagrant/
+*.log
+*.png
+*.vdi
+*.vmdk
+*.vhdx
+.DS_Store
+Thumbs.db

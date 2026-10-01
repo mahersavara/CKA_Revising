@@ -1,0 +1,39 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "generic/ubuntu2204"
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+
+  # Hyper-V Provider voi Linked Clone de tiet kiem dung luong o dia
+  config.vm.provider "hyperv" do |hv|
+    hv.enable_virtualization_extensions = true
+    hv.linked_clone = true
+  end
+
+  # Control Plane (Master Node)
+  config.vm.define "master" do |master|
+    master.vm.hostname = "k8s-control"
+    master.vm.provider "hyperv" do |hv|
+      hv.vmname = "k8s-control"
+      hv.cpus = 2
+      hv.memory = 2560
+      hv.maxmemory = 2560
+    end
+    master.vm.provision "shell", path: "scripts/common.sh"
+    master.vm.provision "shell", path: "scripts/master.sh"
+  end
+
+  # Worker Node 1
+  config.vm.define "worker1" do |worker|
+    worker.vm.hostname = "k8s-worker1"
+    worker.vm.provider "hyperv" do |hv|
+      hv.vmname = "k8s-worker1"
+      hv.cpus = 2
+      hv.memory = 2048
+      hv.maxmemory = 2048
+    end
+    worker.vm.provision "shell", path: "scripts/common.sh"
+    worker.vm.provision "shell", path: "scripts/worker.sh"
+  end
+end
