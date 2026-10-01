@@ -25,13 +25,9 @@ For full details, prerequisites (like enabling Hyper-V and installing Vagrant), 
 
 ## 🛠️ CKA-PREP-2025-v2
 
-This repository also includes a set of straightforward CKA practice labs, each in its own folder with setup scripts, questions, and solution notes.
+For a set of straightforward CKA practice labs, including setup scripts, questions, and solution notes, please refer to the original repository by Mark Jones:
 
-You can find the practice questions in the following directory:  
-👉 **[`./CKA-PREP-2025-v2`](./CKA-PREP-2025-v2)**
-
-To use the practice labs, follow the detailed instructions here:
-👉 **[`CKA-PREP-2025-v2/README.md`](./CKA-PREP-2025-v2/README.md)**
+👉 **[CKA-PREP-2025-v2 on GitHub](https://github.com/markdjones82/CKA-PREP-2025-v2)**
 
 ---
 
